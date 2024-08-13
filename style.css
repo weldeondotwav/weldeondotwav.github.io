@@ -1,0 +1,46 @@
+html {
+  --text-color: #c49c9c;
+  background-color: #121212;
+  color: var(--text-color);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+a, a:visited {
+  color: var(--text-color);
+}
+
+.list-of-links {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+  
+  .link-list-title {
+    margin: 2px;
+  }
+}
+
+.toc {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+
+  h2 {
+    margin: 2px;
+  }
+
+  ul {
+    padding: 8px;
+    margin: 2px
+  }
+}
+
+
+.link-item {
+  padding: 8px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.link-item p {
+  margin: 2px
+}
