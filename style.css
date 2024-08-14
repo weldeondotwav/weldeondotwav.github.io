@@ -4,21 +4,28 @@ html {
   color: var(--text-color);
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 16px;
+}
+
+img {
+  margin: 16px;
 }
 
 a, a:visited {
   color: var(--text-color);
 }
 
-.list-of-links {
-  width: 30%;
-  margin: auto;
-  text-align: left;
-  
-  .link-list-title {
-    margin: 2px;
-  }
-}
+
 
 .toc {
   width: 30%;
@@ -35,6 +42,15 @@ a, a:visited {
   }
 }
 
+.list-of-links {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+  
+  .link-list-title {
+    margin: 2px;
+  }
+}
 
 .link-item {
   padding: 8px;
@@ -43,4 +59,30 @@ a, a:visited {
 
 .link-item p {
   margin: 2px
+}
+
+.list-of-posts {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  
+  .link-list-title {
+    margin: 2px;
+  }
+}
+
+.post-item {
+  padding: 8px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.post-item p, .post-item pre {
+  margin: 2px
+}
+
+.navbar {
+  border-top: 1px solid #3e3e3e;
+  border-bottom: 1px solid #3e3e3e;
+  padding: 8px;
+  width: 400px;
 }
