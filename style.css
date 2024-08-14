@@ -1,5 +1,6 @@
 html {
   --text-color: #c49c9c;
+  --body-min-width: 50%;
   background-color: #121212;
   color: var(--text-color);
   font-family: 'Times New Roman', Times, serif;
@@ -28,7 +29,7 @@ a, a:visited {
 
 
 .toc {
-  width: 30%;
+  width: var(--body-min-width);
   margin: auto;
   text-align: left;
 
@@ -43,7 +44,7 @@ a, a:visited {
 }
 
 .list-of-links {
-  width: 30%;
+  width: var(--body-min-width);
   margin: auto;
   text-align: left;
   
@@ -62,7 +63,7 @@ a, a:visited {
 }
 
 .list-of-posts {
-  width: 50%;
+  width: var(--body-min-width);
   margin: auto;
   text-align: left;
   
@@ -84,5 +85,5 @@ a, a:visited {
   border-top: 1px solid #3e3e3e;
   border-bottom: 1px solid #3e3e3e;
   padding: 8px;
-  width: 400px;
+  width: var(--body-min-width);
 }
