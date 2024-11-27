@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="{{ description }}" />
+    {{ bash styles }}
+  </head>
+  <body>
+    <h1>www dot mike e e dot net</h1>
+    <div class="navbar">
+      <a href="/index.html">home</a>
+      --
+      <a href="/pages/links.html">links</a>
+      --
+      <a href="/pages/posts.html">posts</a>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>    
+    <footer>
+      Last modified
+      <time datetime="{{ date +%Y-%m-%dT%H:%M:%SZ%:z }}">{{ date }}</time>
+      <br>
+      part of a complete breakfast
+    </footer>
+    {{ bash scripts }}
+  </body>
+</html>

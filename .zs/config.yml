@@ -1,0 +1,12 @@
+title: mike website
+description: mike's website
+keywords: dev
+
+extensions:
+  - linkify
+  - footnote
+  - strikethrough
+  - typography
+  - wikilink
+  - highlighting
+  - table
