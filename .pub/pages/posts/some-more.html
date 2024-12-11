@@ -1,16 +1,26 @@
----
-page-title: "A newer kind of page"
-page-description: "a more advanced exploration of features"
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>mike website</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="mike's website" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
-## We are gonna need somewhere to put assets for each post
-I think so at least
-
-
-right?
-
-Inline html is kind of awesome maybe 
-
+  </head>
+  <body>
+    <h1>www dot mike e e dot net</h1>
+    <div class="navbar">
+      <a href="/index.html">home</a>
+      --
+      <!-- <a href="/pages/links.html">links</a>
+      -- -->
+      <a href="/pages/posts.html">posts</a>
+    </div>
+    <div class="content">
+      <h2 id="we-are-gonna-need-somewhere-to-put-assets-for-each-post">We are gonna need somewhere to put assets for each post</h2>
+<p>I think so at least</p>
+<p>right?</p>
+<p>Inline html is kind of awesome maybe</p>
 <style>
   .my-new-div {
     border: 1px solid red;
@@ -23,22 +33,16 @@ Inline html is kind of awesome maybe
   }
 
 </style>
-
 <script>
   function anExampleFunction() {
     alert("javascript!!!")
   }
 </script>
-
 <div id="my-new-div" class="my-new-div">
   <button onclick="anExampleFunction()">a button...</button>
 </div>
-
-maybe especially if using the `include` script in the `.zs` dir - could import html/js/css bundles from one file?
-
-
-## An arbitrary canvas????
-
+<p>maybe especially if using the <code>include</code> script in the <code>.zs</code> dir - could import html/js/css bundles from one file?</p>
+<h2 id="an-arbitrary-canvas">An arbitrary canvas????</h2>
 <!-- styles -->
 <style>
   .arbitrary-div {
@@ -51,16 +55,13 @@ maybe especially if using the `include` script in the `.zs` dir - could import h
     justify-content: center
   }
 </style>
-
 <!-- structure -->
 <div id="arbitrary-div" class="arbitrary-div">
   <canvas id="arbitrary-canvas" width="128" height="128"> simple, geometric shapes and lines </canvas>
 </div>
-
-<label for="iterations">iterations:</label>
+<p><label for="iterations">iterations:</label>
 <input type="text" id="iterations" name="iterations" size="10" />
-<button onclick="doRender()">render</button>
-
+<button onclick="doRender()">render</button></p>
 <!-- behavior -->
 <script>
 
@@ -112,21 +113,24 @@ maybe especially if using the `include` script in the `.zs` dir - could import h
   }
 
 </script>
+<p>so&hellip;..</p>
+<p>that&rsquo;s pretty cool</p>
+<p>idk if i even mind that i don&rsquo;t have intellisense there</p>
+<p>its kinda fun and challenging</p>
+<p>although I bet I could have intellisense if I wrote parts of the pages in separate files and used the <code>include</code> directive?</p>
+<p>also - it would be nice to have a dedicated place to put assets for each post maybe? maybe the <code>posts</code> folder itself contains folders, one for each post?</p>
+<p>Inside the folders can be all of the assets and the post itself&hellip;</p>
 
-so.....
+    </div>    
+    <footer>
+      Last modified
+      <time datetime="2024-12-10T20:04:16Z-06:00
+">Tue, Dec 10, 2024  8:04:16 PM
+</time>
+      <br>
+      part of a complete breakfast
+    </footer>
+    <script type="application/javascript" src="/assets/js/live.js"></script>
 
-that's pretty cool
-
-idk if i even mind that i don't have intellisense there 
-
-its kinda fun and challenging
-
-although I bet I could have intellisense if I wrote parts of the pages in separate files and used the `include` directive?
-
-also - it would be nice to have a dedicated place to put assets for each post maybe? maybe the `posts` folder itself contains folders, one for each post?
-
-Inside the folders can be all of the assets and the post itself...
-
-
-
-
+  </body>
+</html>
