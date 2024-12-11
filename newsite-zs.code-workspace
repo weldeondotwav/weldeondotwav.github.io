@@ -7,5 +7,9 @@
 			"path": "../zs"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"myzs"
+		]
+	}
 }
