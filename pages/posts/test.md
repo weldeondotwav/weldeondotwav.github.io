@@ -1,12 +1,12 @@
 ---
-page-description: "an example markdown page"
+page-description: "an example post"
 page-title: "an example page"
 ---
 
-# This is a markdown page!
+# this is a post
 
-The formal name does here: {{ page-title }}
+The formal name goes here: {{ page-title }}
 
 this could be an article
 
-<button onclick="alert('hello!?!')"> click me </button>
+it isn't right now, but imagine if it was

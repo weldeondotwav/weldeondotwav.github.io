@@ -3,14 +3,6 @@ page-title: "A newer kind of page"
 page-description: "a more advanced exploration of features"
 ---
 
-## We are gonna need somewhere to put assets for each post
-I think so at least
-
-
-right?
-
-Inline html is kind of awesome maybe 
-
 <style>
   .my-new-div {
     border: 1px solid red;
@@ -24,20 +16,7 @@ Inline html is kind of awesome maybe
 
 </style>
 
-<script>
-  function anExampleFunction() {
-    alert("javascript!!!")
-  }
-</script>
-
-<div id="my-new-div" class="my-new-div">
-  <button onclick="anExampleFunction()">a button...</button>
-</div>
-
-maybe especially if using the `include` script in the `.zs` dir - could import html/js/css bundles from one file?
-
-
-## An arbitrary canvas????
+## An arbitrary canvas!
 
 <!-- styles -->
 <style>
@@ -113,20 +92,4 @@ maybe especially if using the `include` script in the `.zs` dir - could import h
 
 </script>
 
-so.....
-
 that's pretty cool
-
-idk if i even mind that i don't have intellisense there 
-
-its kinda fun and challenging
-
-although I bet I could have intellisense if I wrote parts of the pages in separate files and used the `include` directive?
-
-also - it would be nice to have a dedicated place to put assets for each post maybe? maybe the `posts` folder itself contains folders, one for each post?
-
-Inside the folders can be all of the assets and the post itself...
-
-
-
-
