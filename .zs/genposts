@@ -22,6 +22,12 @@ function path_get_description() {
   head -c 250 pages/posts/"$1" | grep -e "^page-description:" | cut -d: -f2 | cut -d\" -f2
 }
 
+# helper to extract the "page-date" front-matter tag from the given file - perhaps quite barbaric
+function path_get_date() {
+  # read the aforementioned "reasonable-amount" of chars and get the data hopefully
+  head -c 250 pages/posts/"$1" | grep -e "^page-date:" | cut -d: -f2 | cut -d\" -f2
+}
+
 # helper to extract the "page-title" front-matter tag from the given file - perhaps quite barbaric
 function path_get_title() {
   # read the aforementioned "reasonable-amount" of chars and get the data hopefully
@@ -34,11 +40,11 @@ function path_to_link() {
 }
 
 # table header - as per markdown
-echo "| Post | Description |"
-echo "| ---- | ----------- |"
+echo "| Post | Description | Date |"
+echo "| ---- | ----------- | ---- |"
 
 PAGES=$(ls $POST_DIR)
 # for each page ...
 for page in $PAGES; do
-  echo "| $(path_to_link "$page") | $(path_get_description "$page") |"
+  echo "| $(path_to_link "$page") | $(path_get_description "$page") | $(path_get_date "$page")|"
 done
