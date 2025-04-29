@@ -2,6 +2,7 @@
 date = '2025-03-16T23:41:11-05:00'
 draft = true
 title = 'Go Interface Assertion'
+tags = ['go','code']
 +++
 
 <!-- ---
