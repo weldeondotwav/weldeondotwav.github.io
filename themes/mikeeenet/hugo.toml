@@ -4,17 +4,17 @@ title = 'My New Hugo Site'
 
 [menus]
   [[menus.main]]
-    name = 'Home'
+    name = 'home'
     pageRef = '/'
     weight = 10
 
   [[menus.main]]
-    name = 'Posts'
+    name = 'posts'
     pageRef = '/posts'
     weight = 20
 
   [[menus.main]]
-    name = 'Tags'
+    name = 'tags'
     pageRef = '/tags'
     weight = 30
 
@@ -22,3 +22,4 @@ title = 'My New Hugo Site'
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+  

@@ -11,7 +11,7 @@ html {
 
 
 body {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   margin: 1rem;
   max-width: 768px;
   background: var(--background-body);
@@ -35,4 +35,12 @@ footer {
 
 a {
   color: var(--text-color);
+}
+
+nav {
+  border-top: 1px solid var(--background-highlight);
+  border-bottom: 1px solid var(--background-highlight);
+  padding: 8px;
+  width: var(--site-global-scale);
+  text-align: center;
 }
