@@ -1,0 +1,4 @@
+baseURL = 'https://mikeee.net/'
+languageCode = 'en-us'
+title = 'mikeee dot net'
+theme = 'mikeeenet'
