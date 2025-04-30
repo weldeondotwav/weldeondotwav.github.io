@@ -7,19 +7,29 @@
 html {
   font-family: "Times New Roman", Times, serif;
   margin: auto;
+  background: var(--background-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 body {
-  /* line-height: 1.5; */
   margin: 1rem;
   max-width: 768px;
-  background: var(--background-body);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  overflow: wrap;
 }
 
 header {

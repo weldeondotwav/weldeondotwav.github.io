@@ -2,6 +2,7 @@
 date = '2025-03-16T23:41:11-05:00'
 draft = true
 title = 'Go Interface Assertion'
+description = 'explicitly assert interface implementation in go'
 tags = ['go','code']
 +++
 
@@ -55,7 +56,6 @@ type ExampleInterface interface {
 type exampleStruct struct{}
 // *exampleStruct does not implement ExampleInterface (missing method doSomething)
 var _ ExampleInterface = (*exampleStruct)(nil)
-
 ```
 
 this is especially handy if you have [goimpl](https://github.com/sasha-s/goimpl), vscode will give you a quick-action on the error to generate stubs for the interface on your struct.
