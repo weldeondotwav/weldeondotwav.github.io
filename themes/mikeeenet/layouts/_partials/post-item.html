@@ -1,0 +1,7 @@
+<div class="post-item">
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> -- <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </h3>
+  <p>{{ .Description }}</p>
+</div>
