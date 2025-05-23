@@ -1,16 +1,10 @@
 +++
 date = '2025-03-16T23:41:11-05:00'
-draft = true
 title = 'Go Interface Assertion'
 description = 'explicitly assert interface implementation in go'
 tags = ['go','code']
 +++
 
-<!-- ---
-page-description: "a handy go snippet"
-page-title: "explicitly assert interface implementation in go"
-page-date: 2025-03-16
---- -->
 
 # a little peace of mind
 
