@@ -47,7 +47,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-          github-server-url: 'git.mikeee.net'
+          github-server-url: 'https://git.mikeee.net'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
