@@ -1,0 +1,19 @@
+<h1>www dot mike e e dot net</h1>
+<!-- {{ partial "menu.html" (dict "menuID" "main" "page" .) }} -->
+
+{{- $thisMenu := index site.Menus "main" }}
+{{- $numMenus := ( $thisMenu | len ) }}
+
+<div class="grey-line-sep"></div>
+<nav>
+  {{ range $k, $v := $thisMenu }}
+  {{- $attrs := dict "href" .URL }}
+  <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
+    $v.Name }}</a>
+
+  {{ if lt ( add $k 1 ) $numMenus }}
+  --
+  {{ end }}
+  {{ end }}
+</nav>
+<div class="grey-line-sep"></div>

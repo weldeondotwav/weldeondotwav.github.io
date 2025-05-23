@@ -1,0 +1,28 @@
+baseURL = 'https://mikeee.net/'
+languageCode = 'en-us'
+title = 'mikeee dot net'
+theme = 'mikeeenet'
+titleCaseStyle = 'none'
+
+
+[menus]
+  [[menus.main]]
+    name = 'home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'tags'
+    pageRef = '/tags'
+    weight = 30
+
+
+[markup]
+  [markup.highlight]
+    style = 'gruvbox'
+    lineNos = true

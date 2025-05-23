@@ -1,0 +1,7 @@
+languageCode = 'en-US'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
+  

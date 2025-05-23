@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <!-- https://ronaldsvilcins.com/2020/12/09/tag-cloud-snippet-for-hugo/ -->
+  {{ $tags := $.Site.Taxonomies.tags.ByCount }}
+  {{ $v1 := where $tags "Count" ">=" 0 }}
+  {{ $v2 := where $v1 "Term" "not in" (slice "hugo" "tags" "rss") }}
+  {{ range $v2 }}
+  {{ if .Term }}
+  {{ $tagURL := printf "tags/%s" .Term | relURL }}
+  <a href="{{ $tagURL }}">{{ .Term }} ({{ .Count }})</a>
+  {{ end }}
+  {{ end }}
+{{ end }}
