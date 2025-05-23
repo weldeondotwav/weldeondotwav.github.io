@@ -3,6 +3,8 @@
 
 {{- $thisMenu := index site.Menus "main" }}
 {{- $numMenus := ( $thisMenu | len ) }}
+
+<div class="grey-line-sep"></div>
 <nav>
   {{ range $k, $v := $thisMenu }}
   {{- $attrs := dict "href" .URL }}
@@ -14,3 +16,4 @@
   {{ end }}
   {{ end }}
 </nav>
+<div class="grey-line-sep"></div>
