@@ -26,3 +26,7 @@ titleCaseStyle = 'none'
   [markup.highlight]
     style = 'gruvbox'
     lineNos = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
